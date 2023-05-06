@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIN Lookup</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+    <div class="main_header">
+        <h1 id="h1_main">VIN Lookup</h1>
+        <p>Verify your VIN for free!</p>
+    </div>
+    <fieldset>
+        <legend>Find your car</legend>
+        <input type="text" id="vinGet" placeholder="VIN" />
+        <button type="button" id="btnGet" onclick="getVicSpecs();">Search</button>
+        <button type="button" id="btnClear" onclick="clearField();">Clear</button>
+    </fieldset>
+    <table id="specs"></table>
+</body>
+</html>
